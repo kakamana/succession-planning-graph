@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "succession-graph"
+version = "0.1.0"
+description = "Succession-Planning Graph Recommender — spectral embeddings + skills + structural proximity"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy",
+  "pandas",
+  "scikit-learn>=1.4",
+  "networkx>=3.2",
+  "matplotlib",
+  "seaborn",
+  "fastapi",
+  "uvicorn[standard]",
+  "pydantic>=2",
+  "joblib",
+  "pyarrow",
+  "mlflow",
+  "scipy",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "httpx",
+  "ruff",
+  "jupyterlab",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

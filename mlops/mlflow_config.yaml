@@ -1,0 +1,7 @@
+experiment_name: "succession_planning_graph"
+tracking_uri: "./mlruns"
+artifact_location: "./mlruns/artifacts"
+tags:
+  portfolio: "asad-mads"
+  category: "00_hr_talent_future_of_work"
+  project_id: "H20"
